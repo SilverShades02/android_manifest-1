@@ -29,6 +29,9 @@
    # Install Repo in the created directory
    # Use a real name/email combination, if you intend to submit patches
    $ repo init -u https://github.com/LLuvia-OS/android_manifest -b 3.0
+   
+   # To sync lluvia repo
+   $ repofastsync (This command is equivalent to "repo sync -c -f --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j8")
    ```
    
 ## Building and Support ##
@@ -36,8 +39,7 @@
 ## TO build LLuvia  ##
 ```bash
    $ . build/envsetup.sh
-   $ lunch LLuvia_device-userdebug
-   $ lunch #select your device from lunch menu
+   $ lunch #select your device from lunch menu (or) lluvia_device-userdebug
    $ time mka rain
    ```
    
