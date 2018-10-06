@@ -717,8 +717,12 @@
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- Remove unused AOSP repos -->
-  <include name="remove.xml" />
+  <include name="pie/remove.xml" />
 
-  <!-- Add all tracked WaveOS repos -->
-  <include name="wave.xml" />
+  <!-- Add all tracked LluviaOS repos -->
+  <include name="pie/lluvia.xml" />
+	
+  <!-- Add all tracked LluviaOS hardware repos -->	
+  <include name="pie/hardware.xml" />	
+
 </manifest>
